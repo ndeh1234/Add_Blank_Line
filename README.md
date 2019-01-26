@@ -24,4 +24,4 @@ def show_unread_books():
     matches = store.book_search(search_term)
     print("\n") # adding blank line before list of book
     ui.show_books(matches)
-    print("\n") # adding blank line after list of books
+    print("\n") # adding blank line after list of book
