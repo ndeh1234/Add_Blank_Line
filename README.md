@@ -5,3 +5,10 @@ def show_read_books():
     print("\n") # adding blank line before list of books
     ui.show_books(read_books)
     print("\n") # adding blank line before list of books
+    
+    
+def show_unread_books():
+    unread_books = store.get_books_by_read_value(False)
+    print("\n") # adding blank line before list of books
+    ui.show_books(unread_books)
+    print("\n") # adding blank line after list of books
