@@ -18,3 +18,10 @@ def show_unread_books():
     print("\n") # adding blank line before list of book
     ui.show_books(books)
     print("\n") # adding blank line after list of books
+    
+    def search_book():
+    search_term = ui.ask_question('Enter search term, will match partial authors or titles.')
+    matches = store.book_search(search_term)
+    print("\n") # adding blank line before list of book
+    ui.show_books(matches)
+    print("\n") # adding blank line after list of books
