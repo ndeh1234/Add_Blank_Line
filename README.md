@@ -12,3 +12,9 @@ def show_unread_books():
     print("\n") # adding blank line before list of books
     ui.show_books(unread_books)
     print("\n") # adding blank line after list of books
+    
+    def show_all_books():
+    books = store.get_all_books()
+    print("\n") # adding blank line before list of book
+    ui.show_books(books)
+    print("\n") # adding blank line after list of books
